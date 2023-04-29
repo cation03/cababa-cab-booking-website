@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Ride History</title>
+    <link rel="stylesheet" href="../static/styles-ridehistory.css">
+  </head>
+  <body>
+	<div class="navbar">
+		<img src="../static/logo.png" alt="Logo">
+		<button class="btn home" onclick= "redirect_ride()"> Back </button>
+	</div>
+		  
+    <div class="form-container">
+      <!-- <button class="btn home" onclick= "r"> Back </button> -->
+      <h1>Ride History</h1>
+      {% for ride in rideHistory %}
+        <div> <p> {{ride}}</p> </div>
+      {% endfor %}
+
+    </div>
+
+  <script>
+    function redirect_ride() {
+        window.location.href = "/requestride";
+    }
+    function request_ride() {
+        window.location.href = "/requestride";
+    }
+    
+  </script>
+  </body>
+</html>

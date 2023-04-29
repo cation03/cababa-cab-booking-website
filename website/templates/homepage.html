@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../static/styles-homepage.css">
+    </head>
+    <title> Cababa - Home </title>
+    <body>        
+        <div class="topnav">
+          <img class="logo-img" src="../static/logo.png" width="75" height="75" ALT="logo-cababa" ALIGN=CENTER>
+          <button class="btn signup" onclick="redirect_signup()">Sign up</button>
+          <button class="btn login" onclick="redirect_login()">Log in</button>
+        </div>
+        <div class="mainimg">
+            <img src="../static/mainimg.jpg" ALT="person-waiting-for-taxi">
+        </div>
+        <div class="tagline">We'll get you there faster<br> than your ex's rebound</div>
+        <div class="thintext">Request a ride, step inside, and let yourself unwind.</div>
+
+        <script>
+            function redirect_signup() {
+                window.location.href = "/signup";
+            }
+            function redirect_login() {
+                window.location.href = "/login";
+            }
+        </script>
+
+    </body>
+</html>

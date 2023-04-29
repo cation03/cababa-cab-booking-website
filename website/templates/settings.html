@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Settings</title>
+    <link rel="stylesheet" href="../static/styles-settings.css">
+  </head>
+  <body>
+    <div class="navbar">
+      <img src="../static/logo.png" alt="Logo">
+      <button class="btn home" onclick="request_ride()">Back</button>
+    </div>
+    
+    <div class="form-container">
+      <h1>Settings</h1>
+      <p> Your ride history linked to previous account will be deleted!</p>
+      <form action="{{ url_for('settings') }}" method="POST">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="Enter new username">
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter new password">
+        
+        <label for="phone">Phone Number:</label>
+        <input type="text" id="phone" name="phone" placeholder="Enter new phone number">
+        
+        <input type="submit" value="Save Changes">
+      </form>
+    </div>
+    <script>
+      function request_ride() {
+          window.location.href = "/requestride";
+      }
+      
+  </script>
+  </body>
+</html>
+

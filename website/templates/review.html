@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Review your Ride</title>
+    <link rel="stylesheet" href="../static/styles-receipt.css">
+  </head>
+  <body>
+	<div class="navbar">
+		<img src="../static/logo.png" alt="Logo">
+		<button class="btn home" onclick="redirect_ride()">Home</button>
+    
+	</div>
+		  
+    <div class="form-container">
+      <h1>Review your ride</h1>
+      <form action="{{ url_for('redirect_review') }}" method="POST">
+        <div>
+            <input type="radio" id="star5" name="rating" value="5">
+            <label for="star5">5 stars</label>
+        </div>
+        <div>
+            <input type="radio" id="star4" name="rating" value="4">
+            <label for="star4">4 stars</label>
+        </div>
+        <div>
+            <input type="radio" id="star3" name="rating" value="3">
+            <label for="star3">3 stars</label>
+        </div>
+        <div>
+            <input type="radio" id="star2" name="rating" value="2">
+            <label for="star2">2 stars</label>
+        </div>
+        <div>
+            <input type="radio" id="star1" name="rating" value="1">
+            <label for="star1">1 star</label>
+        </div>
+        <br>
+        <label for="comment">Comments:</label><br>
+        <textarea id="comment" name="comment" rows="4" cols="50"></textarea><br><br>        
+        <input type="submit" value="Submit review">
+      </form>
+    </div>
+    <script>
+      function redirect_ride() {
+          window.location.href = "/requestride";
+      }
+    </script>
+    
+  </body>
+</html>
+
+

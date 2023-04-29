@@ -1,0 +1,116 @@
+body{
+   padding: 0;
+   margin: 0;
+}
+
+.topnav {
+   background-color: #000;
+   overflow: hidden;
+   border-color: #000;
+   margin-top: 0;
+   padding-top: 0; 
+ }
+ 
+.topnav a:hover {
+   background-color: #ddd;
+   color: black;
+}
+
+.btn {
+   border: 2px;
+   padding: 10px 20px;
+   font-size: 16px;
+   cursor: pointer;
+   display: inline-block;
+   margin: 20px 5px;
+   cursor: pointer;
+   border-radius: 16px;
+}
+
+.btn:hover {
+   background: white;
+   color: black;
+   border-color: white;
+}
+ 
+.signup {
+   background: black;
+   color: white;
+   float: right;
+}
+.home {
+   background: black;
+   color: white;
+   float: right;
+}
+
+.heading{
+   display: block;
+   text-align: center;
+  
+   
+}
+.text{
+   display: block;
+   text-align: center;
+   
+   
+}
+
+.input-div{
+   text-align: center;
+   margin: auto;
+}
+
+.email{
+   display: block;
+   margin: auto;
+   width: 308px;
+   line-height: 24px;
+   font-size: 16px;
+   background: #eee;
+   border: 2px solid #eee;
+   border-radius: 11px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   padding-left: 12px;
+  
+
+   
+}
+
+.pswd{
+   
+   display: block;
+   width: 308px;
+   margin: auto;
+   line-height: 24px;
+   font-size: 16px;
+   background: #eee;
+   border: 2px solid #eee;
+   border-radius: 11px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   padding-left: 12px;
+   margin-top: 16px;
+  
+}
+
+.log-in{
+   
+   margin: auto;
+   display: block;
+   width: 325px;
+   line-height: 24px;
+   border: none;
+   color: rgb(255, 255, 255);
+   border-radius: 11px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   padding-left: 25px;
+   margin-top: 16px;
+   font-size: 16px;
+   cursor: pointer;
+   background: rgb(0, 0, 0);
+   font-weight: 520;
+}

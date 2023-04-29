@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" href="../static/login.css">
+    </head>
+    <body>
+        <div class="topnav">
+            <img class="logo-img" src="../static/logo.png" width="75" height="75" ALT="logo-cababa" ALIGN=CENTER>
+            <button class="btn signup" onclick="redirect_signup()" >Sign Up</button>
+            <button class="btn home" onclick="redirect_home()">Home</button>
+        </div>
+        
+        <div class = "main">
+            
+            
+            <h1 class = "heading">Sign in</h1>
+        
+            <p class = "text">to continue to book your next ride!<p>
+        
+            <div class = "input-div">
+                <form action="{{ url_for('login') }}" method="POST">
+                    <input class = "email" name = "email" type="email" placeholder="Enter email">
+                    <input class = "pswd" name = "pswd" type="password" placeholder="Enter password">
+                    <input class = "log-in" type="submit" value="Log In">           
+                </form>
+            </div>
+            
+        </div>
+
+        <script>
+            function redirect_signup() {
+                window.location.href = "/signup";
+            }
+            function redirect_home() {
+                window.location.href = "/";
+            }
+        </script>
+
+    </body>
+</html>

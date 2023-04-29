@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Settings</title>
+    <link rel="stylesheet" href="../static/styles-ratings.css">
+  </head>
+  <body>
+    <div class="navbar">
+      <img src="../static/logo.png" alt="Logo">
+      <button class="btn home" onclick="redirect_ride()">Back</button>
+    </div>
+    
+    <div class="form-container">
+      <h1>Ratings</h1>
+      <p> Your ride history linked to previous account will be deleted!</p>
+      <form action="{{ url_for('rating') }}" method="POST">
+        <label for="review">Ratings:</label>
+        <input type="number" id="ratings" name="ratings" placeholder="Review your ride">
+        
+        <input type="submit" value="Save Changes">
+      </form>
+    </div>
+    <script>
+      function redirect_ride() {
+          window.location.href = "/requestride";
+      }
+      
+  </script>
+  </body>
+</html>
+

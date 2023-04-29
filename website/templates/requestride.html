@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Request a Ride</title>
+    <link rel="stylesheet" href="../static/requestride-styles.css">
+  </head>
+  <body>
+	<div class="navbar">
+		<img src="../static/logo.png" alt="Logo">
+		<button class="btn home" onclick="redirect_logout()">Log out</button>
+		<button class="btn settings" onclick="redirect_settings()">Settings</button>
+		<button class="btn settings" onclick="ridehistory()">Ride History</button>
+
+	</div>
+
+	<div class="form-container">
+		<h1>Request a Ride</h1>
+		<form action="{{ url_for('requestride') }}" method="POST">
+			<label for="pickup-location">Pickup Location:</label>
+			<input type="text" class="source" id="pickup-location" name="source" required>
+			<label for="dropoff-location">Dropoff Location:</label>
+			<input type="text" class="destination" id="dropoff-location" name="destination" required>
+			<label for="ride-type">Ride Type:</label>
+			<p>Enter "1" if you want a 4 seater Go Ride (CNG)</p>
+			<p>Enter "2" if you want a 7 seater XL Ride (Electric)</p>
+			<p>Enter "3" if you want a 5 seater Sedan Ride (Diesel)</p>
+			<p>Enter "4" if you want a 3 seater Autorickshaw Ride (Petrol)</p>
+			<p>Enter "5" if you want a 1 seater Motorbike Ride (CNG)</p>
+			<input type="text" class="vehicle_type" id="ride-type" name="vehicle_type" required>
+			<br>
+			<input type="submit" value="Request ride">
+		</form>
+		</div>
+    </div>
+	<script>
+		function redirect_logout() {
+			window.location.href = "/logout";
+		}
+		function redirect_settings() {
+			window.location.href = "/settings";
+		}
+		function ridehistory() {
+			window.location.href = "/ridehistory";
+		}
+	</script>
+  </body>
+</html>
