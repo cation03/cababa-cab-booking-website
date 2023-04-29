@@ -73,4 +73,4 @@
 9. Change the password in line 5 of app.py to your MySQL password
 10. `mydb=mc.connect(host="localhost",user="root",passwd="your-password-here",database="cababa")`
 11. Run app.py
-12. Go to http://127.0.0.1:5000 or localhost:5000[localhost:5000] to use the website.
+12. Go to [localhost:5000](localhost:5000) to use the website.
