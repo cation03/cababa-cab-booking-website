@@ -14,7 +14,7 @@ def signup_mysql(user_email, first_name, last_name, ph, ps):
         mycursor.execute(sql1)
         mycursor.close()
         mycursor=mydb.cursor()
-        sql=("INSERT INTO users (user_email, first_name, phno, pswd) VALUES (%s, %s, %s, %s)")
+        sql=("INSERT INTO users (user_email, first_name, last_name, phno, pswd) VALUES (%s, %s, %s, %s, %s)")
         mycursor.execute(sql,data)
         mycursor.execute("commit")
         current_user = user_email
